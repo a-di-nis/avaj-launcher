@@ -1,9 +1,5 @@
 package fr.ecole.avaj.simulator;
 
-import	fr.ecole.avaj.simulator.*;
-import	fr.ecole.avaj.simulator.vehicles.*;
-import	fr.ecole.avaj.weather.*;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;

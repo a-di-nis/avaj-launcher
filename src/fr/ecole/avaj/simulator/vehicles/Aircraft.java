@@ -1,6 +1,5 @@
 package fr.ecole.avaj.simulator.vehicles;
 
-import	fr.ecole.avaj.simulator.*;
 import	fr.ecole.avaj.weather.*;
 
 public abstract class Aircraft {
@@ -13,7 +12,6 @@ public abstract class Aircraft {
         this.name = name;
         this.id = nextId();
         this.coordinates = coordinates;
-        // System.out.println("Aircraft " + this.name + " " + this.id + " spawned");
     }
 
     private long nextId() {

@@ -1,8 +1,5 @@
 package fr.ecole.avaj.weather;
 
-import	fr.ecole.avaj.simulator.*;
-import	fr.ecole.avaj.weather.*;
-
 public class WeatherProvider {
     private static WeatherProvider weatherProvider = null;
     private String[] weather = {"SUN", "RAIN", "FOG", "SNOW"};

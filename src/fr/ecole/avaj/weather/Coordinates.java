@@ -1,8 +1,5 @@
 package fr.ecole.avaj.weather;
 
-import	fr.ecole.avaj.simulator.*;
-import	fr.ecole.avaj.weather.*;
-
 public class Coordinates {
     private int longitude;
     private int latitude;

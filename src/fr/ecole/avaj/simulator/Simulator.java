@@ -1,42 +1,13 @@
 package fr.ecole.avaj.simulator;
 
-import	fr.ecole.avaj.simulator.*;
 import	fr.ecole.avaj.simulator.vehicles.*;
-import	fr.ecole.avaj.weather.*;
+
 import java.io.*;
-import java.lang.*;
 import java.util.*;
 
 public class Simulator {
     private static WeatherTower weatherTower;
-    private static Tower tower;
 	private static List<Flyable> flyables = new ArrayList<Flyable>();
-
-    // public static void main (String[] args) {
-        // Flyable baloon = AircraftFactory.newAircraft("BALOON", "name", 25, 25, 25);
-        // Flyable jetplane = AircraftFactory.newAircraft("JETPLANE", "name", 1, 99, 99);
-        // Flyable helicopter = AircraftFactory.newAircraft("HELICOPTER", "name", 1, 1, 1);
-        // Tower tower = new Tower();
-        // tower.register(baloon);
-        // tower.register(jetplane);
-        // // tower.conditionsChanged();
-        // tower.unregister(baloon);
-        // tower.conditionsChanged();
-
-        // // System.out.println(((Aircraft)baloon).getName());
-        // System.out.println(jetplane);
-        // System.out.println(helicopter);
-        // Coordinates coord = new Coordinates(5, 99, 15);
-        // WeatherProvider weather = WeatherProvider.getProvider();
-        // System.out.println(weather.getCurrentWeather(coord));
-        // System.out.println(coord.getLatitude());
-        // System.out.println(coord.getLongitude());
-        // System.out.println(coord.getHeight());
-        // System.out.println(baloon.getId());
-        // System.out.println(jetplane.getId());
-        // System.out.println(helicopter.getId());
-        
-    // }
 
 	public static void main(String[] arg) throws InterruptedException {
 		try {

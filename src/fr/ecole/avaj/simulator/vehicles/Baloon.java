@@ -14,7 +14,6 @@ public class Baloon extends Aircraft implements Flyable {
     @Override
     public void updateConditions() {
         String weather = WeatherProvider.getProvider().getCurrentWeather(this.coordinates);        
-        // this.coordinates = new Coordinates(this.coordinates.getLongitude() + 5,...)
         switch(weather) {
             case "SUN":
                 this.coordinates.move(2, 0, 4);
@@ -37,7 +36,6 @@ public class Baloon extends Aircraft implements Flyable {
             landed = true;
             Logger.getLogger().writeLine("Tower says: Baloon#" + this.name + "(" + this.id + ") unregistered to weather tower.");
             Logger.getLogger().writeLine("Landing coordinates: " + this.coordinates.getLongitude() + " " + this.coordinates.getLatitude() + " " + this.coordinates.getHeight() + ".");
-            // this.weatherTower.unregister(this);
         }
     }
 
