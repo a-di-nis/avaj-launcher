@@ -17,7 +17,7 @@ public class Helicopter extends Aircraft implements Flyable {
         switch(weather) {
             case "SUN":
                 this.coordinates.move(10, 0, -2);
-                Logger.getLogger().writeLine("Helicopter#" + this.name + "(" + this.id + "): Here comes the sun");
+                Logger.getLogger().writeLine("Helicopter#" + this.name + "(" + this.id + "): Here comes the sun, and I say it's all right");
                 break;
             case "RAIN":
                 this.coordinates.move(5, 0, 0);
@@ -41,8 +41,8 @@ public class Helicopter extends Aircraft implements Flyable {
 
     @Override
     public void registerTower(WeatherTower weatherTower) {
-        weatherTower.register(this);
         this.weatherTower = weatherTower;
+        this.weatherTower.register(this);
         Logger.getLogger().writeLine("Tower says: Helicopter#" + this.name + "(" + this.id + ") registered to weather tower.");
     }
 
