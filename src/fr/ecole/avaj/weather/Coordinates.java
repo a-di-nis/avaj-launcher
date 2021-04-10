@@ -33,5 +33,8 @@ public class Coordinates {
         if (this.height > 100) {
             this.height = 100;
         }
+        this.longitude = this.longitude < 0 ? 0 : this.longitude;
+        this.latitude = this.latitude < 0 ? 0 : this.latitude;
+        this.height = this.height < 0 ? 0 : this.height;
     }
 }

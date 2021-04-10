@@ -18,8 +18,18 @@ public class Tower {
     };
 
     protected void conditionsChanged() {
-        for (Flyable flyable : observer) {
-            flyable.updateConditions();
+        // for (Flyable flyable : observer) {
+        //     flyable.updateConditions();
+        // }
+        int i = 0;
+        while (i < observer.size()) {
+            observer.get(i).updateConditions();
+            if (observer.get(i).hasLanded()) {
+                this.unregister(observer.get(i));
+            }
+            else {
+                i++;
+            }
         }
     }
 }
