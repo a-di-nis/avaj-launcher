@@ -9,6 +9,9 @@ public class AircraftFactory {
             return null;
         }
 
+        if (height > 100)
+            height = 100;
+
         if (type.equalsIgnoreCase("BALOON")) {
             return new Baloon(name, new Coordinates(longitude, latitude, height));
         }
